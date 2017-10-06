@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  
+  
+  
+
+  <link rel="stylesheet" href="/css/mobi.css-3.1.1/dist/mobi.min.css">
+<link rel="stylesheet" href="/css/caomei1.2.1/style.css">
+<link rel="stylesheet" href="/css/theme.css">
+
+  
+    <meta name="keywords" content="开发规范" />
+  
+
+  
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  <title>java 开发规范 - Seyren的技术笔记</title>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/love.js"></script>
+
+
+</head>
+
+  <body class="theme-body">
+    <div class="flex-center theme-header-wrapper">
+  <div class="container flex-left units-gap theme-header-container">
+    <a href="/" class="unit-0 theme-header-icon theme-icon-link" title="Home">
+      <i class="czs-home-l"></i>
+    </a>
+    <div class="flex-center text-center flex-middle unit theme-header-title theme-header-title-no-transition">
+      Seyren的技术笔记
+    </div>
+    <a class="unit-0 theme-header-icon theme-icon-link theme-header-sidebar-icon" href="javascript:void(0);" title="More">
+      <i class="czs-menu-l"></i>
+    </a>
+  </div>
+</div>
+<div class="theme-header-placeholder"></div>
+
+    <div class="flex-center">
+      <div class="container">
+        <article>
+  <h1 class="text-center">
+    java 开发规范
+  </h1>
+    
+  <div class="text-center top-gap">
+    <i class="menu-item-icon fa fa-music fa-fw"></i><a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+      function c() {
+          var e = document.createElement("link");
+          e.setAttribute("type", "text/css");
+          e.setAttribute("rel", "stylesheet");
+          e.setAttribute("href", f);
+          e.setAttribute("class", l);
+          document.body.appendChild(e)
+      }
+      function h() {
+          var e = document.getElementsByClassName(l);
+          for (var t = 0; t < e.length; t++) {
+              document.body.removeChild(e[t])
+          }
+      }
+      function p() {
+          var e = document.createElement("div");
+          e.setAttribute("class", a);
+          document.body.appendChild(e);
+          setTimeout(function() {
+              document.body.removeChild(e)
+          }, 100)
+      }
+      function d(e) {
+          return {
+              height : e.offsetHeight,
+              width : e.offsetWidth
+          }
+      }
+      function v(i) {
+          var s = d(i);
+          return s.height > e && s.height < n && s.width > t && s.width < r
+      }
+      function m(e) {
+          var t = e;
+          var n = 0;
+          while (!!t) {
+              n += t.offsetTop;
+              t = t.offsetParent
+          }
+          return n
+      }
+      function g() {
+          var e = document.documentElement;
+          if (!!window.innerWidth) {
+              return window.innerHeight
+          } else if (e && !isNaN(e.clientHeight)) {
+              return e.clientHeight
+          }
+          return 0
+      }
+      function y() {
+          if (window.pageYOffset) {
+              return window.pageYOffset
+          }
+          return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+      }
+      function E(e) {
+          var t = m(e);
+          return t >= w && t <= b + w
+      }
+      function S() {
+          var e = document.createElement("audio");
+          e.setAttribute("class", l);
+          e.src = i;
+          e.loop = false;
+          e.addEventListener("canplay", function() {
+              setTimeout(function() {
+                  x(k)
+              }, 500);
+              setTimeout(function() {
+                  N();
+                  p();
+                  for (var e = 0; e < O.length; e++) {
+                      T(O[e])
+                  }
+              }, 15500)
+          }, true);
+          e.addEventListener("ended", function() {
+              N();
+              h()
+          }, true);
+          e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+          document.body.appendChild(e);
+          e.play()
+      }
+      function x(e) {
+          e.className += " " + s + " " + o
+      }
+      function T(e) {
+          e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+      }
+      function N() {
+          var e = document.getElementsByClassName(s);
+          var t = new RegExp("\\b" + s + "\\b");
+          for (var n = 0; n < e.length; ) {
+              e[n].className = e[n].className.replace(t, "")
+          }
+      }
+      var e = 30;
+      var t = 30;
+      var n = 350;
+      var r = 350;
+      var i = "//7xuupy.com1.z0.glb.clouddn.com/tongxingSibel%20-%20Im%20Sorry.mp3";
+      var s = "mw-harlem_shake_me";
+      var o = "im_first";
+      var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+      var a = "mw-strobe_light";
+      var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+      var l = "mw_added_css";
+      var b = g();
+      var w = y();
+      var C = document.getElementsByTagName("*");
+      var k = null;
+      for (var L = 0; L < C.length; L++) {
+          var A = C[L];
+          if (v(A)) {
+              if (E(A)) {
+                  k = A;
+                  break
+              }
+          }
+      }
+      if (A === null) {
+          console.warn("Could not find a node of the right size. Please try a different page.");
+          return
+      }
+      c();
+      S();
+      var O = [];
+      for (var L = 0; L < C.length; L++) {
+          var A = C[L];
+          if (v(A)) {
+              O.push(A)
+          }
+      }
+      })()    '>High一下</a>
+  </div>
+  <div class="text-center top-gap">
+    <div class="text-small text-muted">
+  <time datetime="2015-08-08T00:00:00+08:00">
+    2015-08-08
+  </time>
+  <span class="theme-separator">·</span>
+  <i class="czs-user-l"></i>
+  <a class="text-muted theme-text-no-decoration" href="https://github.com/"></a>
+  <span class="theme-separator">·</span>
+  <i class="czs-bookmark-l"></i>
+  <a class="text-muted theme-text-no-decoration" href="/categories/技术/">技术</a>
+  <span class="theme-comment-count-container theme-hide theme-comment-count-container-transparent">
+    <span class="theme-separator">·</span>
+    <i class="czs-comment-l"></i>
+    <a class="text-muted theme-text-no-decoration theme-comment-count" data-disqus-identifier="2015/08/08/tech/2015-8-8-javaEE-specification/" href="/2015/08/08/tech/2015-8-8-javaEE-specification/#disqus_thread"></a>
+  </span>
+</div>
+
+  </div>
+  <div class="top-gap-big">
+    <p>关键字: 自定义java 开发规范</p>
+<h1 id="2-设计规范"><a href="#2-设计规范" class="headerlink" title="2 设计规范"></a>2 设计规范</h1><h2 id="2-1-系统设计规范"><a href="#2-1-系统设计规范" class="headerlink" title="2.1   系统设计规范"></a>2.1   系统设计规范</h2><p>当有需求 变化的时候，开发经理必须遵守一个顺序，第一先修改概要设计、设计设计，数据库设计等接着再修改代码的原则；</p>
+<p>对于每一 次修改，都必须编写 changelog ；</p>
+<p>系统的设 计文件需要放到版本控制文件当中，以便对不同的版本进行控制；</p>
+<h2 id="2-2-数据库设计规范"><a href="#2-2-数据库设计规范" class="headerlink" title="2.2   数据库设计规范"></a>2.2   数据库设计规范</h2><p>数据库的 设计必须放到 PowerDesinger 的 Repository 当中；  </p>
+<p>每一个项 目只有系统架构师，开发经理有权限去修改物理数据模型，其他人只有只读取权；  </p>
+<p>按数据库 脚本的命名规范编写数据库脚本与初始化数据脚本；  </p>
+<p>数据库的 设计只能由系统架构师，开发经理或由开发经理指定的高级工程师进行修改；  </p>
+<p>需求变更 需要修改到数据库的时候，必须先修改物理数据模型，再到数据库修改；  </p>
+<p>任何人没 有经过系统架构师或开发经理的授权，不得私自修改数据库；  </p>
+<p>对修改内 容需要修改 changelog ，并编写修改数据库的脚本；  </p>
+<p>修改数据 库的脚本需要在测试机上做过测试，并提供项目部经理；  </p>
+<h1 id="3-文件命名规范"><a href="#3-文件命名规范" class="headerlink" title="3   文件命名规范"></a>3   文件命名规范</h1><h2 id="3-1-页面文件命名规范"><a href="#3-1-页面文件命名规范" class="headerlink" title="3.1   页面文件命名规范"></a>3.1   页面文件命名规范</h2><p>页面文件 的命名是由小写英文字码，下划线，数字组成； user_list.html ； index.jsp ； index_cn.jsp ； 503.jsp 等；<br>页面文件 最好以英文单词组成，以便提高文件的可读性；例如： permission_list.jsp<br>对于一个 模块的操作页面，以模块名 + 下 划线 + 动词组成，例如： permission_list.jsp<br>对于有些 模块使用英文单词命名比较麻烦的，在不得已的情况下，可以使用拼音的简写来进行命名，但是，必须在页面文件的最前面加上注释，注释以下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;%--</div><div class="line"></div><div class="line">  用户列表， yflb 是用户列表的简写 .</div><div class="line"></div><div class="line">  @version $ Date 2005-7-19 $</div><div class="line"></div><div class="line">  @author gsh XXXXXXXX 公司 / 信息化应用中心 / 平台产品部</div><div class="line"></div><div class="line">--%&gt;</div></pre></td></tr></table></figure>
+<p>其中 &lt;%– 的下一行或多行为页面作用描述，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">@version 后跟日期，以日期作为版 本</div><div class="line">@author 公司帐号 XXXXXXX 公司 / 信息化应用中心 / 所在部门</div></pre></td></tr></table></figure>
+<h2 id="3-2-Java-文件命名规范"><a href="#3-2-Java-文件命名规范" class="headerlink" title="3.2  Java 文件命名规范"></a>3.2  Java 文件命名规范</h2><p>Java 类文件的命名不要超过 32 个字字符；<br>Java 文件的命名规范按照 Sun 公司的标准进行命名；<br>取消 Java 文件以下划线进行分隔的命名方式；<br>取消命名 当中出现的 Map 这些命名方式；</p>
+<h3 id="3-2-1-Action-类的命名规范"><a href="#3-2-1-Action-类的命名规范" class="headerlink" title="3.2.1  Action 类的命名规范"></a>3.2.1  Action 类的命名规范</h3><p>Action 类是以英文单词组成；由模块名 + [ 其它标试 ] + Action 构成；<br>同一个模 块的 Action 类 CRUD 操作放在同一个 Action 类当中；比如 UserAction ； GroupAction ；<br>对于一个 模块的非 CRUD 操作，由系统架构师或开发经理根据命名规范决定重新定义一个有意 义的 Action ；  比如： UserSearchAction ；<br>不要在类 文件当中加上下划线；<br>一个 Action 类文件不要超过 500 行代码；  </p>
+<h3 id="3-2-2-Service-层的命名规范"><a href="#3-2-2-Service-层的命名规范" class="headerlink" title="3.2.2  Service 层的命名规范"></a>3.2.2  Service 层的命名规范</h3><p>Service 层命名规范将由接口与实现构成；<br>Service 层接口的命名由 I + 模块名 + Service 构成，例如： IUserService.java ；<br>Service 层实现的命名由  模块名 + ServiceImpl 构 成，例如： UserServiceImpl.java<br>DAO 层方法的命名：以 操作动词 + ValueObject 名<br>创建前 缀： create ，比如： createUser(User user) ；<br>修改前 缀： update ，比如： updateUser(User user);<br>删除前 缀： delete ，比如： deleteUser(User user);<br>列出前 缀： list ，比如： listUsers();<br>通过 UUID 查找实体前缀： find + 实体名 + ById ，比如： findUserById(String userId);<br>查询： search ，比如： searchUsers(Map searchKey);<br>统计： count ，比如： countUsers();  </p>
+<h3 id="3-2-3-DAO-层的命名规范"><a href="#3-2-3-DAO-层的命名规范" class="headerlink" title="3.2.3  DAO 层的命名规范"></a>3.2.3  DAO 层的命名规范</h3><p>DAO 层命名规范将由接口与实现构成；<br>DAO 层接口的命名由 I + 模块名 + DAO 构成，例如： IUserDAO ；<br>DAO 层实现的命名方式需要结构持久层的实现方式，比如， Hibernate 的应用的话其命名由：模块名 + DAO + Hibernate 构成，例如： UserDAOHibernate ；如实持久实现是由 JDO 方式实现，则命名由：模块名 + DAO + JDO 构 成，例如： UserDAOJDO ；<br>所有 CRUD 在接口当中都必须定义，方法体调用父对象的操作实现；<br>DAO 层方法的命名：以 操作动词 + ValueObject 名<br>创建前 缀： create ，比如： createUser(User user) ；<br>修改前 缀： update ，比如： updateUser(User user);<br>删除前 缀： delete ，比如： updateUser(User user);<br>列出前 缀： list ，比如： deleteUsers();<br>通过 UUID 查找实体前缀： find + 实体名 + ById ，比如： findUserById(String userId);<br>查询： search ，比如： searchUsers(Map searchKey);<br>统计： count ，比如： countUsers();  </p>
+<h3 id="3-2-4-Pojo-类的命名规范"><a href="#3-2-4-Pojo-类的命名规范" class="headerlink" title="3.2.4  Pojo 类的命名规范"></a>3.2.4  Pojo 类的命名规范</h3><p>Pojo 类的类名必须与 html 文件的文件名对应，比如， Pojo 的类名为 User ，则 hbm 映射文件的命名为 User.hbm.xml ；<br>Pojo 类的类名需要与命名规范相对应，比如，表名为 ITSM_ CONFIGURATION_ITEM （ itsm 项目的配置项表），相对应的 Pojo 类名应该为 ConfigurationItem.java ， hbm 映射文件的命名为： ConfigurationItem.hbm.xml ；  </p>
+<h3 id="3-2-5-Helper-类的命名规范"><a href="#3-2-5-Helper-类的命名规范" class="headerlink" title="3.2.5  Helper 类的命名规范"></a>3.2.5  Helper 类的命名规范</h3><p>帮助类的 命名是由名词 + [ 名词 ] + Helper 构成；如 Spring 的帮助类命名为 SpringHelper.java ；<br> 所有帮助类的每一个 public 方法，都必须加上简单的使用 sample ；  </p>
+<h3 id="3-2-6-Servlet-类的命名规范"><a href="#3-2-6-Servlet-类的命名规范" class="headerlink" title="3.2.6  Servlet 类的命名规范"></a>3.2.6  Servlet 类的命名规范</h3><p>Servlet 的命名由名词 + [ 动词 ] + [ 名词 ] + Servlet 构成；比如 Struts 的 ActionServlet.java<br>Listener 的命名由名词 + [ 动词 ] + [ 名词 ] + Listener 构成；比如： CommonSessionListener.java<br>Filter 的命名由名词 + [ 动词 ] + [ 名词 ] + Filter 构成；比如 Spring 的 CharacterEncodingFilter.java ；  </p>
+<h3 id="3-2-7-EJB-类的命名规范"><a href="#3-2-7-EJB-类的命名规范" class="headerlink" title="3.2.7  EJB 类的命名规范"></a>3.2.7  EJB 类的命名规范</h3><p>Ejb 的命名最终是以 Bean 结尾；<br>Ejb 的接口文件存放在 Ejb 同级目录的 interface 当中；<br>使用 Ejb 必须提供相应的 Xdolect 脚本；<br>布署描述 符存放在 src 下面；  </p>
+<h3 id="3-2-8-基础类的命名规范"><a href="#3-2-8-基础类的命名规范" class="headerlink" title="3.2.8   基础类的命名规范"></a>3.2.8   基础类的命名规范</h3><p>基础类的 命名以 Base + 名词 + [ 动词 ] + [ 名词 ] 构成；例如： BaseAction.java ； BaseService ；<br>基础数只 能为 abstract ；或 interface ；  </p>
+<h2 id="3-3-Java-Package-的命名及层次结构规范"><a href="#3-3-Java-Package-的命名及层次结构规范" class="headerlink" title="3.3  Java Package 的命名及层次结构规范"></a>3.3  Java Package 的命名及层次结构规范</h2><p>包的命名 必须有意义；包名必须以 com.gdcn 开头；<br>com.gdcn.common 包存放着所有各个项目所共用的文件；项目组开发人员不得修改；<br>项目组开 发出更加通用的组件，通知部门经理或系统架构师，经开发讨论后，将新的构件加入到 common 包当中；<br>包名的命 名大致如下：<br>com.gdcn.projectname.common 存放着项目级别的通用类；<br>com.gdcn.projectname.web 存放着与 web 相关的类文件；<br>com.gdcn.projectname.web.action 存放着 struts 的 action 文件；<br>com.gdcn.projectname.web.taglib 存放着所有的标签文件；<br>com.gdcn.projectname.web.servlet 存放着所有的 servlet ；<br>com.gdcn.projectname.valueobject 存放着所有 pojo ；<br>com.gdcn.projectname.service 存放着项目所有 service 层的接口；<br>com.gdcn.projectname.service.impl 存放着项目 service 层的所有实现；<br>com.gdcn.projectname.dao 存放着项目 dao 层的所有接口；<br>com.gdcn.projectname.dao.impl 存放着项目 dao 层的所有接口；<br>com.gdcn.projectname.webservice 下面存放着 webservice 的实现与接口；<br>对于大项 目，允许将 com.gdcn.projectname.web.action 下面再进行模块的区分；<br>对于大项 目，允许将 com.gdcn.projectname.service 下面再按模块进行区分；<br>对于大项 目，允许将 com.gdcn.projectname.dao 下面再按模块进行区分；  </p>
+<h2 id="3-4-导入包的顺序"><a href="#3-4-导入包的顺序" class="headerlink" title="3.4   导入包的顺序"></a>3.4   导入包的顺序</h2><p>在应用程 序当中导入的包的顺序是做如下定义：<br>java<br>javax<br>org<br>net<br>com<br>可以使用 格式化工具进行代码的格式化；  </p>
+<h2 id="3-5-自定义标签命名规范"><a href="#3-5-自定义标签命名规范" class="headerlink" title="3.5   自定义标签命名规范"></a>3.5   自定义标签命名规范</h2><p>标签的名 名以前缀 + 下划线 + 后缀的方式进行命名；比如，通用标签的前缀以 gdcn 命名，后缀以 tree 命名；<br>项目级别 的标签以项目名称 + 下划线 + 标签名称进行命名：<br>标签称只 允许由小写英文字母 + 下线划 + 数字组成；  </p>
+<h2 id="3-6-属性配置文件的命名规范"><a href="#3-6-属性配置文件的命名规范" class="headerlink" title="3.6   属性配置文件的命名规范"></a>3.6   属性配置文件的命名规范</h2><p>属性配置 的命名只允许小写英文字母 和 下划线组成；<br>属性配置 文件只允许是 property 文件或者是 xml 文件；<br>属性文件 存放在工程目录的 etc 下面  </p>
+<h2 id="3-7-数据库脚本的命名规范"><a href="#3-7-数据库脚本的命名规范" class="headerlink" title="3.7   数据库脚本的命名规范"></a>3.7   数据库脚本的命名规范</h2><p>建表文件 以项目名称 + 下划线 + setup 构成，例如： itsm_setup.sql ；<br>初始化脚 本文件以项目名称 + 下划线 + init 构成，例如： itsm_init.sql ；<br>修改数据 脚本文件以项目名称 + 下划线 + modify + 修改时间构成，例如：   itsm_modify_2006-8-19.sql 构成；<br>数据库脚 本文件必须存放到 cvs 或 SVN 当中做版本控制；  </p>
+<h1 id="4-编码规范"><a href="#4-编码规范" class="headerlink" title="4   编码规范"></a>4   编码规范</h1><h2 id="4-1-Java-类的注释规范"><a href="#4-1-Java-类的注释规范" class="headerlink" title="4.1  Java 类的注释规范"></a>4.1  Java 类的注释规范</h2><p>每一个类 都必须有较为详细的注释；<br>注释内容 包括：类文件说明、创建者、创建时间、修改者、修改时间、其它信息：比如：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"></div><div class="line"> * &lt;code&gt;CommonServletContextListener&lt;/code&gt; ，该监听器的作用是在 web app 启动的时候</div><div class="line"></div><div class="line"> * 将 ServletContext 绑定到 SpringHelper 当中，以更加方便地获取到上下文信息 .</div><div class="line"></div><div class="line"> * @author XXX ，信息化产品部 - 研发中心 -XXXXXXX 有限公司 . Create-Time 2006-8-1 11:42.</div><div class="line"></div><div class="line"> * @see ServletContextListener</div><div class="line"></div><div class="line"> * @see SpringHelper</div><div class="line"></div><div class="line">*/</div></pre></td></tr></table></figure>
+<p>##4.2  Java 方法的注释规范<br>每一个方 法都需要有注释，对于通用类提供的方法，除了有详细的注释除外，还必须有一些简单的 sample ；<br>每一个参 数都必须做一下说明；<br>每一个返 回值都必须做一下说明；<br>每一个异 常都必须做一下说明；  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">    /**</div><div class="line"></div><div class="line">     * parse Web Security Settings</div><div class="line"></div><div class="line">     * @param ele Element</div><div class="line"></div><div class="line">     * @return WebSecuritySettings</div><div class="line"></div><div class="line">     * @throws ConfigException</div><div class="line"></div><div class="line">     */</div><div class="line"></div><div class="line">static WebSecuritySettings parseWebSecuritySettings(Element ele) throws ConfigException &#123;</div><div class="line"></div><div class="line">……</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>方法体里 面重要的算法需要加上详细注释；  </p>
+<h2 id="4-3-Java-类属性的注释规范"><a href="#4-3-Java-类属性的注释规范" class="headerlink" title="4.3  Java 类属性的注释规范"></a>4.3  Java 类属性的注释规范</h2><p>对于类属 性必须加上注释；<br>通用的 POJO 类的属性注释必须有详细的注释；<br>项目级别 的 POJO 类的属性注释由开发经理根据项目的紧急程度自己做控制；  </p>
+<h2 id="4-4-Java-层次结构的规范"><a href="#4-4-Java-层次结构的规范" class="headerlink" title="4.4  Java 层次结构的规范"></a>4.4  Java 层次结构的规范</h2><p>Jsp 页面只负责页面的展现，理论上不允许任何业务逻辑代码存放在 jsp 文件当中；<br>Action 层负责处理页面的请求信息，并将 ActionForm 转换为 pojo ，或将 pojo 转换为 ActionForm ；<br>ActionForm 不能达到 Service 层；<br>Pojo 不能达到 Jsp 层；列表对象必须在 Action 当中做封装；<br>不允许在 Action 层抛出 ServiceException ；<br>Action 层只允许抛出 ParameterException 异常；<br>业务层负 责业务信息的处理，并调用业务层的对象；<br>业务层抛 出 ServiceException ；<br>不允许在 业务层操作 Hibernate Session ；<br>不允许在 业务层传递 SQL 或 HQL 到 DAO 层；<br>DAO 层负责数据库的操作；<br>DAO 层抛出 DAOException ；  </p>
+<h2 id="4-5-WEB-目录存储规范"><a href="#4-5-WEB-目录存储规范" class="headerlink" title="4.5  WEB 目录存储规范"></a>4.5  WEB 目录存储规范</h2><p>在 WEB 目录下面：<br>images 存放着所有的图片文件，该目录可以按照模块，按照组件名进行细 化；  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@page &#123; margin: 2cm &#125; P &#123; margin-bottom: 0.21cm &#125; H2 &#123; margin-bottom: 0.21cm &#125; H2.western &#123; font-family: &quot;DejaVu Serif&quot;, serif &#125; H2.cjk &#123; font-family: &quot;DejaVu Sans&quot;; font-style: normal &#125; H2.ctl &#123; font-family: &quot;DejaVu Sans&quot; &#125; TD P &#123; margin-bottom: 0cm &#125;</div></pre></td></tr></table></figure>
+<p>stylesheet 存放着所有的样式文件；<br>javascript 存放着所有的脚本文件；  </p>
+
+  </div>
+</article>
+<blockquote class="top-gap-big"> <p> This article is using the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en" class"text-muted">CC BY-NC-ND 3.0</a> license. </p> </blockquote>
+<div class="top-gap-big text-center text-muted">
+  <small>
+    <i class="czs-tag-l"></i>
+    <a class="text-muted" href="/tags/开发规范/">开发规范</a>
+  </small>
+</div>
+
+
+  <div id="disqus_thread" class="top-gap-big"></div>
+  <script>
+    var langMap = {
+      en: 'en',
+      'zh-CN': 'zh'
+    };
+    var disqus_config = function () {
+      this.language = langMap[''] || langMap['en'];
+      this.page.url = 'http://blog.seyren.com/2015/08/08/tech/2015-8-8-javaEE-specification/';
+      this.page.identifier = '2015/08/08/tech/2015-8-8-javaEE-specification/';
+      this.page.title = 'java 开发规范';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = '//seyren.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+        <hr class="top-gap-big"></hr>
+<p class="text-center">
+  <small class="text-muted">
+    &copy;
+    
+      2015 -
+    
+    <span itemprop="copyrightYear">2017</span>
+    <i class="czs-heart" style="color:red;"></i>
+    <span itemprop="copyrightHolder">Seyren</span>
+
+    <br/>
+
+    Powered by <a class="text-muted" href="https://hexo.io" title="Hexo">Hexo</a>
+    <span class="theme-separator">·</span>
+    Theme
+    <a class="text-muted" href="https://github.com/xcatliu/hexo-theme-milk">Milk</a>
+  </small>
+</p>
+
+      </div>
+      <div class="theme-sidebar-mask theme-hide"></div>
+<aside class="theme-sidebar-wrapper">
+  <div class="container flex-left units-gap theme-header-container">
+    
+    <a class="unit-0 theme-icon-link" href="/archives" title="归档">
+      <i class="czs-folder-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/categories" title="分类">
+      <i class="czs-bookmark-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/tags" title="标签">
+      <i class="czs-tag-l"></i>
+    </a>
+  
+    <div class="unit"></div>
+  
+    <a class="unit-0 theme-icon-link" href="http://blog.seyren.com" title="关于我">
+      <i class="czs-user-l"></i>
+    </a>
+  
+
+  </div>
+  <div class="container">
+    
+          <h2>Seyren的技术笔记</h2>
+          
+          <p class="top-gap-0 text-muted"></p>
+          
+          <div class="flex-left flex-middle top-gap">
+            <img alt="Avatar" height="24" src="/assets/about/xcatliu_512.png"/>
+            <span class="theme-sidebar-author">Seyren</span>
+          </div>
+          
+          <p>欢迎访问Seyren的博客，这里搜集了我的技术文章和生活感悟，希望能够与您一起交流，共同成长。</p>
+          
+          <p class="theme-sidebar-social">
+            
+    <a class="unit-0 theme-icon-link" href="https://github.com/seyrenhe" title="GitHub">
+      <i class="czs-github"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="https://twitter.com/SeyrenHe" title="Twitter">
+      <i class="czs-twitter"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="mailto:seyren@outlook.com" title="Gmail">
+      <i class="czs-message-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/atom.xml" title="RSS 订阅">
+      <i class="czs-rss"></i>
+    </a>
+  
+
+          </p>
+          
+          <h5>Links</h5>
+          <p class="text-muted">
+            <small>
+              <ul class="theme-list-style-none">
+                <li><a class="text-muted" href="http://chuangzaoshi.com/">创造狮</a></li><li><a class="text-muted" href="/links">More</a></li>
+              </ul>
+            </small>
+          </p>
+          
+  </div>
+</aside>
+
+    </div>
+    <script src="/js/theme.js"></script>
+    
+
+    
+  <script id="dsq-count-scr" src="//seyren.disqus.com/count.js" async></script>
+
+  </body>
+</html>

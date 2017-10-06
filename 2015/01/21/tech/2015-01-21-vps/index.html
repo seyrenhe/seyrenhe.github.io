@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  
+  
+  
+
+  <link rel="stylesheet" href="/css/mobi.css-3.1.1/dist/mobi.min.css">
+<link rel="stylesheet" href="/css/caomei1.2.1/style.css">
+<link rel="stylesheet" href="/css/theme.css">
+
+  
+    <meta name="keywords" content="vps, ssh, zsh" />
+  
+
+  
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  <title>如何配置一台新vps - Seyren的技术笔记</title>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/love.js"></script>
+
+
+</head>
+
+  <body class="theme-body">
+    <div class="flex-center theme-header-wrapper">
+  <div class="container flex-left units-gap theme-header-container">
+    <a href="/" class="unit-0 theme-header-icon theme-icon-link" title="Home">
+      <i class="czs-home-l"></i>
+    </a>
+    <div class="flex-center text-center flex-middle unit theme-header-title theme-header-title-no-transition">
+      Seyren的技术笔记
+    </div>
+    <a class="unit-0 theme-header-icon theme-icon-link theme-header-sidebar-icon" href="javascript:void(0);" title="More">
+      <i class="czs-menu-l"></i>
+    </a>
+  </div>
+</div>
+<div class="theme-header-placeholder"></div>
+
+    <div class="flex-center">
+      <div class="container">
+        <article>
+  <h1 class="text-center">
+    如何配置一台新vps
+  </h1>
+    
+  <div class="text-center top-gap">
+    <i class="menu-item-icon fa fa-music fa-fw"></i><a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+      function c() {
+          var e = document.createElement("link");
+          e.setAttribute("type", "text/css");
+          e.setAttribute("rel", "stylesheet");
+          e.setAttribute("href", f);
+          e.setAttribute("class", l);
+          document.body.appendChild(e)
+      }
+      function h() {
+          var e = document.getElementsByClassName(l);
+          for (var t = 0; t < e.length; t++) {
+              document.body.removeChild(e[t])
+          }
+      }
+      function p() {
+          var e = document.createElement("div");
+          e.setAttribute("class", a);
+          document.body.appendChild(e);
+          setTimeout(function() {
+              document.body.removeChild(e)
+          }, 100)
+      }
+      function d(e) {
+          return {
+              height : e.offsetHeight,
+              width : e.offsetWidth
+          }
+      }
+      function v(i) {
+          var s = d(i);
+          return s.height > e && s.height < n && s.width > t && s.width < r
+      }
+      function m(e) {
+          var t = e;
+          var n = 0;
+          while (!!t) {
+              n += t.offsetTop;
+              t = t.offsetParent
+          }
+          return n
+      }
+      function g() {
+          var e = document.documentElement;
+          if (!!window.innerWidth) {
+              return window.innerHeight
+          } else if (e && !isNaN(e.clientHeight)) {
+              return e.clientHeight
+          }
+          return 0
+      }
+      function y() {
+          if (window.pageYOffset) {
+              return window.pageYOffset
+          }
+          return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+      }
+      function E(e) {
+          var t = m(e);
+          return t >= w && t <= b + w
+      }
+      function S() {
+          var e = document.createElement("audio");
+          e.setAttribute("class", l);
+          e.src = i;
+          e.loop = false;
+          e.addEventListener("canplay", function() {
+              setTimeout(function() {
+                  x(k)
+              }, 500);
+              setTimeout(function() {
+                  N();
+                  p();
+                  for (var e = 0; e < O.length; e++) {
+                      T(O[e])
+                  }
+              }, 15500)
+          }, true);
+          e.addEventListener("ended", function() {
+              N();
+              h()
+          }, true);
+          e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+          document.body.appendChild(e);
+          e.play()
+      }
+      function x(e) {
+          e.className += " " + s + " " + o
+      }
+      function T(e) {
+          e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+      }
+      function N() {
+          var e = document.getElementsByClassName(s);
+          var t = new RegExp("\\b" + s + "\\b");
+          for (var n = 0; n < e.length; ) {
+              e[n].className = e[n].className.replace(t, "")
+          }
+      }
+      var e = 30;
+      var t = 30;
+      var n = 350;
+      var r = 350;
+      var i = "//7xuupy.com1.z0.glb.clouddn.com/tongxingSibel%20-%20Im%20Sorry.mp3";
+      var s = "mw-harlem_shake_me";
+      var o = "im_first";
+      var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+      var a = "mw-strobe_light";
+      var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+      var l = "mw_added_css";
+      var b = g();
+      var w = y();
+      var C = document.getElementsByTagName("*");
+      var k = null;
+      for (var L = 0; L < C.length; L++) {
+          var A = C[L];
+          if (v(A)) {
+              if (E(A)) {
+                  k = A;
+                  break
+              }
+          }
+      }
+      if (A === null) {
+          console.warn("Could not find a node of the right size. Please try a different page.");
+          return
+      }
+      c();
+      S();
+      var O = [];
+      for (var L = 0; L < C.length; L++) {
+          var A = C[L];
+          if (v(A)) {
+              O.push(A)
+          }
+      }
+      })()    '>High一下</a>
+  </div>
+  <div class="text-center top-gap">
+    <div class="text-small text-muted">
+  <time datetime="2015-01-21T00:00:00+08:00">
+    2015-01-21
+  </time>
+  <span class="theme-separator">·</span>
+  <i class="czs-user-l"></i>
+  <a class="text-muted theme-text-no-decoration" href="https://github.com/"></a>
+  <span class="theme-separator">·</span>
+  <i class="czs-bookmark-l"></i>
+  <a class="text-muted theme-text-no-decoration" href="/categories/技术/">技术</a>
+  <span class="theme-comment-count-container theme-hide theme-comment-count-container-transparent">
+    <span class="theme-separator">·</span>
+    <i class="czs-comment-l"></i>
+    <a class="text-muted theme-text-no-decoration theme-comment-count" data-disqus-identifier="2015/01/21/tech/2015-01-21-vps/" href="/2015/01/21/tech/2015-01-21-vps/#disqus_thread"></a>
+  </span>
+</div>
+
+  </div>
+  <div class="top-gap-big">
+    <p>最近一台digitalocean的vps越来越不给力了，于是和沈老师商量了一下，想和他一起租一台linode的vps，玩vps的人都应该知道linode，那是美国一家土豪vps运营商，以前最便宜的套餐也要几十美元，不过最近推出了屌丝套餐，只要10美元就够了，10美元，你买不了吃亏，10美元，你买不了上当。。。。。。。。（滚租）  </p>
+<p>于是很快一台centos 系统的vps就弄好了，不过这也只是一台什么都没有的机子而已，我们要给他配置好应用。维护好系统的安全。总结一下，有以下步骤：</p>
+<ul>
+<li>bash换成zsh</li>
+<li>ssh验证方式改成公钥验证，关毕root的密码登录</li>
+<li>lnmp环境安装（待补全）</li>
+</ul>
+<p>###bash换成zsh###</p>
+<ol>
+<li><p>安装zsh: </p>
+<pre><code>yum install zsh
+</code></pre></li>
+<li><p>切换到zsh:</p>
+<pre><code>chsh -s /bin/zsh 或者 usermod -s /bin/zsh root
+</code></pre></li>
+<li><p>配置zsh,推荐用oh-my-zsh</p>
+<pre><code>如果是新的vps，你得先安装git: yum install git
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+</code></pre><p>   cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</p>
+</li>
+</ol>
+<p>###ssh验证方式改成公钥验证###</p>
+<ol>
+<li><p>在你使用的系统上运行以下命令来生成公私密钥对:</p>
+<pre><code>ssh-keygen 
+一直按回车默认就行，
+</code></pre><p>然后你会发现~/.ssh/下有了一个id_rsa私钥文件和一个id_rsa.pub的公钥文件</p>
+</li>
+<li><p>上传公钥到vps：<br> 先在vps上用ls -al查看一下.ssh目录是否存在。<br> 如果不存在需要用mkdir .ssh创建这个目录。注意.ssh目录的权限最好为700,authorized_keys文件的权限最好为600<br> 如果存在就可以运行以下命令。</p>
+<pre><code>scp ~/.ssh/id_rsa.pub user@example.com:/home/user/.ssh/uploaded_key.pub
+</code></pre></li>
+<li><p>把上传的公钥设置为验证密钥</p>
+<pre><code>ssh user@example.com &quot;echo `cat ~/.ssh/uploaded_key.pub` &gt;&gt; ~/.ssh/authorized_keys&quot;
+</code></pre></li>
+<li><p>关闭密码登录<br> 编辑/etc/ssh/sshd_config<br> 找到#PasswordAuthentication yes<br> 改成PasswordAuthentication no  </p>
+</li>
+<li><p>更改ssh监听端口<br>编辑/etc/ssh/sshd_config<br>把port 22改成你相要的端口,最好是4位以上的端口<br> 重启ssh服务<br> centos7用：</p>
+<pre><code>systemctl  restart sshd
+</code></pre><p>这样我们就完成了用公钥登录vps，这样别人就算能猜到密码也登录不了，你的私钥一定要保存好，这个丟了的话，你自已也登录不了，只能通过vps管理系统的后台console修改登录方式了。</p>
+</li>
+</ol>
+
+  </div>
+</article>
+<blockquote class="top-gap-big"> <p> This article is using the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en" class"text-muted">CC BY-NC-ND 3.0</a> license. </p> </blockquote>
+<div class="top-gap-big text-center text-muted">
+  <small>
+    <i class="czs-tag-l"></i>
+    <a class="text-muted" href="/tags/vps/">vps</a> , <a class="text-muted" href="/tags/ssh/">ssh</a> , <a class="text-muted" href="/tags/zsh/">zsh</a>
+  </small>
+</div>
+
+
+  <div id="disqus_thread" class="top-gap-big"></div>
+  <script>
+    var langMap = {
+      en: 'en',
+      'zh-CN': 'zh'
+    };
+    var disqus_config = function () {
+      this.language = langMap[''] || langMap['en'];
+      this.page.url = 'http://blog.seyren.com/2015/01/21/tech/2015-01-21-vps/';
+      this.page.identifier = '2015/01/21/tech/2015-01-21-vps/';
+      this.page.title = '如何配置一台新vps';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = '//seyren.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+        <hr class="top-gap-big"></hr>
+<p class="text-center">
+  <small class="text-muted">
+    &copy;
+    
+      2015 -
+    
+    <span itemprop="copyrightYear">2017</span>
+    <i class="czs-heart" style="color:red;"></i>
+    <span itemprop="copyrightHolder">Seyren</span>
+
+    <br/>
+
+    Powered by <a class="text-muted" href="https://hexo.io" title="Hexo">Hexo</a>
+    <span class="theme-separator">·</span>
+    Theme
+    <a class="text-muted" href="https://github.com/xcatliu/hexo-theme-milk">Milk</a>
+  </small>
+</p>
+
+      </div>
+      <div class="theme-sidebar-mask theme-hide"></div>
+<aside class="theme-sidebar-wrapper">
+  <div class="container flex-left units-gap theme-header-container">
+    
+    <a class="unit-0 theme-icon-link" href="/archives" title="归档">
+      <i class="czs-folder-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/categories" title="分类">
+      <i class="czs-bookmark-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/tags" title="标签">
+      <i class="czs-tag-l"></i>
+    </a>
+  
+    <div class="unit"></div>
+  
+    <a class="unit-0 theme-icon-link" href="http://blog.seyren.com" title="关于我">
+      <i class="czs-user-l"></i>
+    </a>
+  
+
+  </div>
+  <div class="container">
+    
+          <h2>Seyren的技术笔记</h2>
+          
+          <p class="top-gap-0 text-muted"></p>
+          
+          <div class="flex-left flex-middle top-gap">
+            <img alt="Avatar" height="24" src="/assets/about/xcatliu_512.png"/>
+            <span class="theme-sidebar-author">Seyren</span>
+          </div>
+          
+          <p>欢迎访问Seyren的博客，这里搜集了我的技术文章和生活感悟，希望能够与您一起交流，共同成长。</p>
+          
+          <p class="theme-sidebar-social">
+            
+    <a class="unit-0 theme-icon-link" href="https://github.com/seyrenhe" title="GitHub">
+      <i class="czs-github"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="https://twitter.com/SeyrenHe" title="Twitter">
+      <i class="czs-twitter"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="mailto:seyren@outlook.com" title="Gmail">
+      <i class="czs-message-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/atom.xml" title="RSS 订阅">
+      <i class="czs-rss"></i>
+    </a>
+  
+
+          </p>
+          
+          <h5>Links</h5>
+          <p class="text-muted">
+            <small>
+              <ul class="theme-list-style-none">
+                <li><a class="text-muted" href="http://chuangzaoshi.com/">创造狮</a></li><li><a class="text-muted" href="/links">More</a></li>
+              </ul>
+            </small>
+          </p>
+          
+  </div>
+</aside>
+
+    </div>
+    <script src="/js/theme.js"></script>
+    
+
+    
+  <script id="dsq-count-scr" src="//seyren.disqus.com/count.js" async></script>
+
+  </body>
+</html>

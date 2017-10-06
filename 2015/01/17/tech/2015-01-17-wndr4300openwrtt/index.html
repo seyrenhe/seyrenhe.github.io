@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  
+  
+  
+
+  <link rel="stylesheet" href="/css/mobi.css-3.1.1/dist/mobi.min.css">
+<link rel="stylesheet" href="/css/caomei1.2.1/style.css">
+<link rel="stylesheet" href="/css/theme.css">
+
+  
+    <meta name="keywords" content="openwrt, wndr4300, 路由器" />
+  
+
+  
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  <title>wndr4300刷openwrt - Seyren的技术笔记</title>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/love.js"></script>
+
+
+</head>
+
+  <body class="theme-body">
+    <div class="flex-center theme-header-wrapper">
+  <div class="container flex-left units-gap theme-header-container">
+    <a href="/" class="unit-0 theme-header-icon theme-icon-link" title="Home">
+      <i class="czs-home-l"></i>
+    </a>
+    <div class="flex-center text-center flex-middle unit theme-header-title theme-header-title-no-transition">
+      Seyren的技术笔记
+    </div>
+    <a class="unit-0 theme-header-icon theme-icon-link theme-header-sidebar-icon" href="javascript:void(0);" title="More">
+      <i class="czs-menu-l"></i>
+    </a>
+  </div>
+</div>
+<div class="theme-header-placeholder"></div>
+
+    <div class="flex-center">
+      <div class="container">
+        <article>
+  <h1 class="text-center">
+    wndr4300刷openwrt
+  </h1>
+    
+  <div class="text-center top-gap">
+    <i class="menu-item-icon fa fa-music fa-fw"></i><a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+      function c() {
+          var e = document.createElement("link");
+          e.setAttribute("type", "text/css");
+          e.setAttribute("rel", "stylesheet");
+          e.setAttribute("href", f);
+          e.setAttribute("class", l);
+          document.body.appendChild(e)
+      }
+      function h() {
+          var e = document.getElementsByClassName(l);
+          for (var t = 0; t < e.length; t++) {
+              document.body.removeChild(e[t])
+          }
+      }
+      function p() {
+          var e = document.createElement("div");
+          e.setAttribute("class", a);
+          document.body.appendChild(e);
+          setTimeout(function() {
+              document.body.removeChild(e)
+          }, 100)
+      }
+      function d(e) {
+          return {
+              height : e.offsetHeight,
+              width : e.offsetWidth
+          }
+      }
+      function v(i) {
+          var s = d(i);
+          return s.height > e && s.height < n && s.width > t && s.width < r
+      }
+      function m(e) {
+          var t = e;
+          var n = 0;
+          while (!!t) {
+              n += t.offsetTop;
+              t = t.offsetParent
+          }
+          return n
+      }
+      function g() {
+          var e = document.documentElement;
+          if (!!window.innerWidth) {
+              return window.innerHeight
+          } else if (e && !isNaN(e.clientHeight)) {
+              return e.clientHeight
+          }
+          return 0
+      }
+      function y() {
+          if (window.pageYOffset) {
+              return window.pageYOffset
+          }
+          return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+      }
+      function E(e) {
+          var t = m(e);
+          return t >= w && t <= b + w
+      }
+      function S() {
+          var e = document.createElement("audio");
+          e.setAttribute("class", l);
+          e.src = i;
+          e.loop = false;
+          e.addEventListener("canplay", function() {
+              setTimeout(function() {
+                  x(k)
+              }, 500);
+              setTimeout(function() {
+                  N();
+                  p();
+                  for (var e = 0; e < O.length; e++) {
+                      T(O[e])
+                  }
+              }, 15500)
+          }, true);
+          e.addEventListener("ended", function() {
+              N();
+              h()
+          }, true);
+          e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+          document.body.appendChild(e);
+          e.play()
+      }
+      function x(e) {
+          e.className += " " + s + " " + o
+      }
+      function T(e) {
+          e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+      }
+      function N() {
+          var e = document.getElementsByClassName(s);
+          var t = new RegExp("\\b" + s + "\\b");
+          for (var n = 0; n < e.length; ) {
+              e[n].className = e[n].className.replace(t, "")
+          }
+      }
+      var e = 30;
+      var t = 30;
+      var n = 350;
+      var r = 350;
+      var i = "//7xuupy.com1.z0.glb.clouddn.com/tongxingSibel%20-%20Im%20Sorry.mp3";
+      var s = "mw-harlem_shake_me";
+      var o = "im_first";
+      var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+      var a = "mw-strobe_light";
+      var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+      var l = "mw_added_css";
+      var b = g();
+      var w = y();
+      var C = document.getElementsByTagName("*");
+      var k = null;
+      for (var L = 0; L < C.length; L++) {
+          var A = C[L];
+          if (v(A)) {
+              if (E(A)) {
+                  k = A;
+                  break
+              }
+          }
+      }
+      if (A === null) {
+          console.warn("Could not find a node of the right size. Please try a different page.");
+          return
+      }
+      c();
+      S();
+      var O = [];
+      for (var L = 0; L < C.length; L++) {
+          var A = C[L];
+          if (v(A)) {
+              O.push(A)
+          }
+      }
+      })()    '>High一下</a>
+  </div>
+  <div class="text-center top-gap">
+    <div class="text-small text-muted">
+  <time datetime="2015-01-17T00:00:00+08:00">
+    2015-01-17
+  </time>
+  <span class="theme-separator">·</span>
+  <i class="czs-user-l"></i>
+  <a class="text-muted theme-text-no-decoration" href="https://github.com/"></a>
+  <span class="theme-separator">·</span>
+  <i class="czs-bookmark-l"></i>
+  <a class="text-muted theme-text-no-decoration" href="/categories/技术/">技术</a>
+  <span class="theme-comment-count-container theme-hide theme-comment-count-container-transparent">
+    <span class="theme-separator">·</span>
+    <i class="czs-comment-l"></i>
+    <a class="text-muted theme-text-no-decoration theme-comment-count" data-disqus-identifier="2015/01/17/tech/2015-01-17-wndr4300openwrtt/" href="/2015/01/17/tech/2015-01-17-wndr4300openwrtt/#disqus_thread"></a>
+  </span>
+</div>
+
+  </div>
+  <div class="top-gap-big">
+    <p>最近入了一个wndr4300的路由器，很高大上，据说很容易折腾，于是为了抱着“生命不体，折腾不止”的精神，开始在网上搜索wndr4300的相关内容。经过一段时间的搜索，还真让我找到了不好折腾方法，其中最实用的当属，刷openwrt了.openwrt可以看作是一个跑在路由器上的小型linux系统，并且可以在系统的基础上定制很多功能，比如科学上网，远程下载等等。</p>
+<p>###准备工作###</p>
+<ol>
+<li>wndr4300一台。。。这里最基本的</li>
+<li>openwrt 包一个，可以从这里下载<a href="https://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/nand/openwrt-ar71xx-nand-wndr4300-ubi-factory.img" target="_blank" rel="external">适配4300的openwrt包</a></li>
+<li>编译好的shadowsocks chinadns ssgui chinadnsgui <a href="http://pan.baidu.com/s/1dD3sf5J" target="_blank" rel="external">百度盘</a></li>
+<li>能用来连openwrt的ssh软件一个，和我一样用linux的就不用了准备了。</li>
+</ol>
+<p>###刷机###</p>
+<ol>
+<li>登录wndr4300后台。网址为192.168.1.1</li>
+<li>在高级-升级那里选择刚下好的openwrt img包，等它上传完，会现实版本。按确定后，路由器开始更新系统，等会就会重启。</li>
+<li><p>重启完毕后， 拿根网上，连上路由器的lan口，设置系统ip为192.168.1.2 掩码为 255.255.255.0 网关为192.168.1.1 archlinux可以和我一样用以下命令设置：    </p>
+<pre><code>$ sudo ip addr add 192.168.1.2/24 broadcast 192.168.1.255 dev 有线网卡名 #这是设置Ip
+$ sudo ip route add default via 192.168.1.1 #这是设置网关
+</code></pre></li>
+<li>设置好后，再登录192.168.1.1,你会发现界面变成openwrt的界面了。首次登录设置一下密码，后面ssh登录也要用，openwrt的设置请自行google</li>
+<li><p>我们再来说下安装shadowsocks和chinadns,把上面baidu盘里的东西解压出来，然后通过scp命令上传到路由器的/tmp目录下，具体命令为：</p>
+<pre><code>scp 解压好的目录/*.ipk root@192.168.1.1:/tmp
+</code></pre></li>
+<li><p>通过ssh登录路由器来安装：</p>
+<pre><code>$ssh root@192.168.1.1
+$cd /tmp;opkg install *.ipk
+</code></pre></li>
+<li><p>如果出现依赖错误，例如libopenssl,就执行下面命令：</p>
+<pre><code>$opkg update #首次登录要更新一下包数据库
+$opkg install libopenssl
+解决依赖后再执行第6步里的 
+$opkg install *.ipk
+</code></pre></li>
+<li><p>接下后修改dnsmasq</p>
+<pre><code>$vim /etc/dnsmasq.conf
+最后加上
+no-resolv
+server=127.0.0.1#5353
+</code></pre></li>
+<li>至此基本参数配置完毕，接下来在openwrt web管理页面里配置一下ss和chinadns就可以了<br> <img src="http://ww1.sinaimg.cn/mw690/542e8902gw1emcuzdqdhgj20h414otcg.jpg" alt="图片"> </li>
+</ol>
+<p>###需要注意的地方###</p>
+<ol>
+<li>如果你在上面开启了udp转发功能，那么你需要你的shadowsocks支持udp转发功能，shadowsocks-python版不支持，需要把server端改成node.js版或者c的shadowsocks-libev版，并且启动的时候要加-u参数，<code>注：debian7通过apt安装的shadowsocks-libev版默认已开启udp转发。</code></li>
+</ol>
+<p>###【转】介绍一下chinadns的作用###</p>
+<p>方案基于shadowsocks-libev的ss-redir功能，根据网上获取的一个路由表作为判定条件，将访问国外IP的流量转发至代理服务器。 不过ss-redir只支持TCP的转发，UDP的是不行的，因此要解决DNS问题，因为DNS默认是UDP。</p>
+<p>要解决DNS解析问题，确保国内站点利用国内DNS解析，国外站点转发至代理服务器解析。显然在客户端完美实现比较困难，于是乎有个退而求其次的判断方法，同时对国内DNS和国外DNS（走代理）发起DNS请求，根据返回的IP地址判断采用哪个的结果（也就是我们用到的ChinaDNS用的方法）：</p>
+<p>1、国内DNS返回结果为国内IP，国外DNS返回结果同样为国内IP或者返回失败，则采用国内DNS解析结果；</p>
+<p>2、国外DNS返回结果为国外IP，国内DNS返回结果同样为国外IP或者返回失败，则采用国外DNS解析结果；</p>
+<p>3、国内DNS返回国内IP，国外DNS返回国外IP，则如果国内IP不在黑名单列表（GFW的DNS污染IP黑名单）中，采用国内IP，否则采用国外IP；</p>
+<p>4、不符合上述结果的，返回失败。</p>
+<p>另外对于某些客户端软件可能会使用UDP方式进行一些通讯，比如说外服游戏的客户端，这类软件，如果是PC上你还是老老实实用Proxifier之类的软件转发至本地的shadowsocks客户端吧，如果是手机上还是要老老实实开shadowsocks软件，并且要使用VPN方式。不过这类比较非常少见，大部分情况，被墙的服务还是采用TCP的。</p>
+<p>####chinadns就是能够解决dns污染实现dns，实现udp转发的一个工具####</p>
+
+  </div>
+</article>
+<blockquote class="top-gap-big"> <p> This article is using the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en" class"text-muted">CC BY-NC-ND 3.0</a> license. </p> </blockquote>
+<div class="top-gap-big text-center text-muted">
+  <small>
+    <i class="czs-tag-l"></i>
+    <a class="text-muted" href="/tags/openwrt/">openwrt</a> , <a class="text-muted" href="/tags/wndr4300/">wndr4300</a> , <a class="text-muted" href="/tags/路由器/">路由器</a>
+  </small>
+</div>
+
+
+  <div id="disqus_thread" class="top-gap-big"></div>
+  <script>
+    var langMap = {
+      en: 'en',
+      'zh-CN': 'zh'
+    };
+    var disqus_config = function () {
+      this.language = langMap[''] || langMap['en'];
+      this.page.url = 'http://blog.seyren.com/2015/01/17/tech/2015-01-17-wndr4300openwrtt/';
+      this.page.identifier = '2015/01/17/tech/2015-01-17-wndr4300openwrtt/';
+      this.page.title = 'wndr4300刷openwrt';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = '//seyren.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+        <hr class="top-gap-big"></hr>
+<p class="text-center">
+  <small class="text-muted">
+    &copy;
+    
+      2015 -
+    
+    <span itemprop="copyrightYear">2017</span>
+    <i class="czs-heart" style="color:red;"></i>
+    <span itemprop="copyrightHolder">Seyren</span>
+
+    <br/>
+
+    Powered by <a class="text-muted" href="https://hexo.io" title="Hexo">Hexo</a>
+    <span class="theme-separator">·</span>
+    Theme
+    <a class="text-muted" href="https://github.com/xcatliu/hexo-theme-milk">Milk</a>
+  </small>
+</p>
+
+      </div>
+      <div class="theme-sidebar-mask theme-hide"></div>
+<aside class="theme-sidebar-wrapper">
+  <div class="container flex-left units-gap theme-header-container">
+    
+    <a class="unit-0 theme-icon-link" href="/archives" title="归档">
+      <i class="czs-folder-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/categories" title="分类">
+      <i class="czs-bookmark-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/tags" title="标签">
+      <i class="czs-tag-l"></i>
+    </a>
+  
+    <div class="unit"></div>
+  
+    <a class="unit-0 theme-icon-link" href="http://blog.seyren.com" title="关于我">
+      <i class="czs-user-l"></i>
+    </a>
+  
+
+  </div>
+  <div class="container">
+    
+          <h2>Seyren的技术笔记</h2>
+          
+          <p class="top-gap-0 text-muted"></p>
+          
+          <div class="flex-left flex-middle top-gap">
+            <img alt="Avatar" height="24" src="/assets/about/xcatliu_512.png"/>
+            <span class="theme-sidebar-author">Seyren</span>
+          </div>
+          
+          <p>欢迎访问Seyren的博客，这里搜集了我的技术文章和生活感悟，希望能够与您一起交流，共同成长。</p>
+          
+          <p class="theme-sidebar-social">
+            
+    <a class="unit-0 theme-icon-link" href="https://github.com/seyrenhe" title="GitHub">
+      <i class="czs-github"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="https://twitter.com/SeyrenHe" title="Twitter">
+      <i class="czs-twitter"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="mailto:seyren@outlook.com" title="Gmail">
+      <i class="czs-message-l"></i>
+    </a>
+  
+    <a class="unit-0 theme-icon-link" href="/atom.xml" title="RSS 订阅">
+      <i class="czs-rss"></i>
+    </a>
+  
+
+          </p>
+          
+          <h5>Links</h5>
+          <p class="text-muted">
+            <small>
+              <ul class="theme-list-style-none">
+                <li><a class="text-muted" href="http://chuangzaoshi.com/">创造狮</a></li><li><a class="text-muted" href="/links">More</a></li>
+              </ul>
+            </small>
+          </p>
+          
+  </div>
+</aside>
+
+    </div>
+    <script src="/js/theme.js"></script>
+    
+
+    
+  <script id="dsq-count-scr" src="//seyren.disqus.com/count.js" async></script>
+
+  </body>
+</html>
