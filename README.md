@@ -1,0 +1,2 @@
+# seyrenhe.github.io
+blog
